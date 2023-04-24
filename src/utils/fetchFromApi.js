@@ -7,8 +7,10 @@ const options = {
     url: BASE_URL,
     params: {part: 'snippet', videoId: 'M7FIvfx5J10', maxResults: 50,},
     headers: {
+      
       'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY ,
-      'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
+      'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com',
+      'content-type': 'application/octet-stream',
     }
   };
   
